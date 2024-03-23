@@ -1,0 +1,124 @@
+.AboutWrapper {
+  display: flex;
+  row-gap: 15px;
+  color: white;
+  text-align: center;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0 25px 0;
+  background-color: var(--about-bg);
+}
+.AboutWrapper > h1 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: "roboto-bold";
+}
+.AboutWrapper > p {
+  width: 85%;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  color: var(--ash-text);
+  font-family: "roboto-regular";
+}
+.aboutBoxes {
+  display: grid;
+  margin-top: 5px;
+  column-gap: 70px;
+  align-items: center;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(1, 90px);
+  grid-template-columns: repeat(4, 145px);
+}
+.aboutBoxes > div {
+  width: 145px;
+  height: 90px;
+  row-gap: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutBoxes > div > h1 {
+  font-size: 1.65rem;
+  letter-spacing: 1px;
+  color: var(--main-green);
+  font-family: "roboto-bold";
+}
+.aboutBoxes > div > p {
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 1.1px;
+  font-family: "roboto-regular";
+}
+@media (max-width: 830px) {
+  .aboutBoxes {
+    column-gap: 50px;
+  }
+}
+@media (max-width: 760px) {
+  .aboutBoxes {
+    column-gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .aboutBoxes {
+    grid-template-columns: repeat(4, 115px);
+  }
+  .aboutBoxes > div {
+    width: 115px;
+  }
+}
+@media (max-width: 580px) {
+  .aboutBoxes {
+    column-gap: 0;
+    gap: 50px;
+    grid-template-rows: repeat(2, 80px);
+    grid-template-columns: repeat(2, 115px);
+  }
+  .aboutBoxes > div {
+    width: 115px;
+    height: 80px;
+  }
+}
+@media (max-width: 300px) {
+  .AboutWrapper > h1 {
+    font-size: 1.8rem;
+  }
+  .AboutWrapper > p {
+    font-size: 0.8rem;
+    line-height: 1.45rem;
+  }
+  .aboutBoxes {
+    gap: 14px;
+    column-gap: 40px;
+    grid-template-rows: repeat(2, 75px);
+    grid-template-columns: repeat(2, 95px);
+  }
+  .aboutBoxes > div {
+    width: 95px;
+    height: 75px;
+  }
+}
+@media (max-width: 250px) {
+  .AboutWrapper > h1 {
+    font-size: 1.5rem;
+  }
+  .AboutWrapper > p {
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+  }
+  .aboutBoxes {
+    gap: 14px;
+    column-gap: 40px;
+    grid-template-rows: repeat(4, 90px);
+    grid-template-columns: repeat(1, 115px);
+  }
+  .aboutBoxes > div {
+    width: 115px;
+    height: 90px;
+  }
+}

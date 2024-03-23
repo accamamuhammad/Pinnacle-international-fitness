@@ -1,0 +1,40 @@
+/** Part two */
+.mainTestimony {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  padding: 20px;
+  row-gap: 16px;
+  min-width: 340px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgb(254, 254, 254);
+}
+.stars > img {
+  width: 16px;
+  margin-right: 10px;
+}
+.mainTestimony > p {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.1px;
+  color: rgb(96, 90, 90);
+}
+.personBox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.personBox div:nth-child(1) > h4 {
+  font-family: "roboto-bold";
+}
+.personBox div:nth-child(1) > p {
+  font-size: 0.55rem;
+  margin-top: 2px;
+  font-family: "roboto-regular";
+}

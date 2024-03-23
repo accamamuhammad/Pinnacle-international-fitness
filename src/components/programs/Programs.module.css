@@ -1,0 +1,97 @@
+.ProgramsWrapper {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 55px 0px 55px 0px;
+  background-color: var(--programs-main);
+}
+.ProgramsWrapper > p {
+  font-size: 1.25rem;
+  letter-spacing: 1.2px;
+  color: rgb(190, 182, 182);
+  font-family: "Teko-light";
+}
+.ProgramsWrapper > h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-family: "roboto-bold";
+}
+.programBox {
+  gap: 40px;
+  width: 100%;
+  display: grid;
+  margin: 35px 0;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(3, 290px);
+}
+@media (max-width: 1000px) {
+  .programBox {
+    gap: 25px;
+  }
+  .programBox {
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(2, 290px);
+  }
+}
+@media (max-width: 630px) {
+  .programBox {
+    gap: 14px;
+  }
+  .programBox {
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+@media (max-width: 530px) {
+  .programBox {
+    gap: 0;
+    row-gap: 30px;
+  }
+  .programBox {
+    margin: 25px 0;
+    grid-template-rows: repeat(6, 330px);
+    grid-template-columns: repeat(1, 320px);
+  }
+  .ProgramsWrapper > p {
+    font-size: 1.2rem;
+  }
+  .ProgramsWrapper > h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 360px) {
+  .programBox {
+    gap: 0;
+    row-gap: 25px;
+  }
+  .programBox {
+    grid-template-rows: repeat(6, 290px);
+    grid-template-columns: repeat(1, 280px);
+  }
+  .ProgramsWrapper > p {
+    font-size: 1rem;
+  }
+  .ProgramsWrapper > h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 300px) {
+  .programBox {
+    row-gap: 18px;
+  }
+  .programBox {
+    grid-template-rows: repeat(6, 230px);
+    grid-template-columns: repeat(1, 230px);
+  }
+  .ProgramsWrapper > p {
+    font-size: 0.85rem;
+  }
+  .ProgramsWrapper > h1 {
+    font-size: 1.8rem;
+  }
+}

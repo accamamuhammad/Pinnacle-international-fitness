@@ -1,0 +1,129 @@
+.testimonyWrapper {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px 40px 80px;
+  background-color: var(--programs-main);
+}
+/** Part one */
+.testimonyWrapper > p {
+  font-size: 0.95rem;
+  line-height: 1.35rem;
+  letter-spacing: 1.25px;
+  color: rgb(190, 182, 182);
+  font-family: "Teko-light";
+}
+.testimonyWrapper > .header > h1 {
+  width: 400px;
+  color: white;
+  font-size: 2rem;
+  font-family: "roboto-bold";
+}
+.testimonyWrapper > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/** Part two */
+.cardBox {
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+  column-gap: 25px;
+  margin-top: 25px;
+  max-width: 2000px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.cardBox::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .testimonyWrapper {
+    padding: 35px 60px 35px 60px;
+  }
+  .testimonyWrapper > .header > h1 {
+    width: 360px;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 800px) {
+  .testimonyWrapper {
+    padding: 35px 60px 35px 60px;
+  }
+  .testimonyWrapper > .header > h1 {
+    width: 320px;
+    font-size: 1.4rem;
+  }
+  .testimonyWrapper > .header > div > div {
+    width: 32px;
+    height: 32px;
+  }
+  .testimonyWrapper > p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .testimonyWrapper {
+    padding: 35px 35px 35px 35px;
+  }
+  .testimonyWrapper > .header > h1 {
+    width: 320px;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .testimonyWrapper {
+    padding: 35px 25px 35px 25px;
+  }
+  .testimonyWrapper > .header > h1 {
+    width: 290px;
+    font-size: 1.3rem;
+  }
+  .testimonyWrapper > .header > div > div {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .testimonyWrapper {
+    padding: 35px 20px 35px 20px;
+  }
+  .testimonyWrapper > .header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .testimonyWrapper > .header > h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .testimonyWrapper > .header > div {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .testimonyWrapper > .header > div > div {
+    width: 28px;
+    height: 28px;
+  }
+  .testimonyWrapper > p {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .testimonyWrapper > .header > h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 220px) {
+  .testimonyWrapper > .header > h1 {
+    font-size: 1rem;
+  }
+  .testimonyWrapper > .header > div > div {
+    width: 28px;
+    height: 28px;
+  }
+}

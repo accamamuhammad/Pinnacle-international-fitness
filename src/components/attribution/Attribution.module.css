@@ -1,0 +1,31 @@
+.AttributionWrapper {
+  row-gap: 5px;
+  display: flex;
+  padding: 0px 0 10px 0;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--programs-main);
+}
+.AttributionWrapper a {
+  color: white;
+  font-size: 1.35rem;
+  text-decoration: none;
+  letter-spacing: 1.55px;
+  font-family: "Teko-light";
+}
+.AttributionWrapper p {
+  color: rgb(148, 142, 142);
+  font-size: 0.8rem;
+  font-family: "roboto-regular";
+}
+@media (max-width: 330px) {
+  .AttributionWrapper a {
+    font-size: 1.15rem;
+  }
+  .AttributionWrapper p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}

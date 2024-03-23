@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+:root {
+  --about-bg: #31312f;
+  --white-text: #ffffff;
+  --main-green: #60b82e;
+  --programs-sec: #353732;
+  --programs-main: #1e1e1e;
+  --programs-text: #b4aaaa;
+  --programs-green: #abdf41;
+  --programs-light-green: #abdf41;
+  --ash-text: rgb(190, 182, 182);
+}
+@font-face {
+  font-family: "Teko-Bold";
+  src: url(/public/fonts/Teko/static/Teko-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Teko-semi-Bold";
+  src: url(/public/fonts/Teko/static/Teko-SemiBold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Teko-medium";
+  src: url(/public/fonts/Teko/static/Teko-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Teko-regular";
+  src: url(/public/fonts/Teko/static/Teko-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Teko-light";
+  src: url(/public/fonts/Teko/static/Teko-Light.ttf) format("ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url(/public/fonts/Roboto/Roboto-Black.ttf) format("ttf");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url(/public/fonts/Roboto/Roboto-Regular.ttf) format("ttf");
+}
