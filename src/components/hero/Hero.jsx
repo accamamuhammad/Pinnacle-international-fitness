@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    setTimeout(handlePreloader, 4500);
+    setTimeout(handlePreloader, 100);
   }, []);
 
   return (

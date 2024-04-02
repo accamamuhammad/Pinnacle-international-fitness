@@ -1,4 +1,5 @@
 import galleryCSS from "./Gallery.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import mainImage from "../../../public/Images/Equipment-And-Amenities-Of-Pinnacle-International-Fitness81-768x700.jpg";
 import otherImage1 from "../../../public/Images/Equipment-And-Amenities-Of-Pinnacle-International-Fitness101-768x700.jpg";
 import otherImage2 from "../../../public/Images/Equipment-And-Amenities-Of-Pinnacle-International-Fitness41-768x700.jpg";
@@ -20,7 +21,12 @@ const Gallery = () => {
             alt="image"
           />
           <img src={otherImage3} alt="image" />
-          <img src={otherImage4} alt="image" />
+          <LazyLoadImage
+            src={otherImage4}
+            width={600}
+            height={400}
+            alt="Image Alt"
+          />
         </div>
       </div>
     </div>

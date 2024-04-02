@@ -16,15 +16,22 @@
   justify-content: center;
 }
 .galleryWrapper img {
+  object-fit: cover;
+  object-position: center;
   box-shadow: 5px 7px 10px var(--programs-main);
 }
-.galleryWrapper > p {
+.blurLoad {
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+}
+.galleryWrapper p {
   font-size: 1.1rem;
   letter-spacing: 1.3px;
   color: rgb(190, 182, 182);
   font-family: "Teko-light";
 }
-.galleryWrapper > h1 {
+.galleryWrapper h1 {
   width: 500px;
   color: white;
   font-size: 2rem;
@@ -51,7 +58,7 @@
   grid-template-columns: repeat(2, 230px);
   grid-template-rows: repeat(2, 230px);
 }
-.otherImages > img {
+.otherImages img {
   width: 230px;
   height: 230px;
   border-radius: 8px;
@@ -77,7 +84,7 @@
     grid-template-columns: repeat(2, 180px);
     grid-template-rows: repeat(2, 180px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 180px;
     height: 180px;
   }
@@ -91,7 +98,7 @@
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 150px;
     height: 150px;
   }
@@ -112,7 +119,7 @@
     grid-template-columns: repeat(2, 230px);
     grid-template-rows: repeat(2, 230px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 230px;
     height: 230px;
   }
@@ -131,7 +138,7 @@
     grid-template-columns: repeat(2, 180px);
     grid-template-rows: repeat(2, 180px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 180px;
     height: 180px;
   }
@@ -152,7 +159,7 @@
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 150px;
     height: 150px;
   }
@@ -173,7 +180,7 @@
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: repeat(2, 130px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 130px;
     height: 130px;
   }
@@ -196,7 +203,7 @@
     grid-template-columns: repeat(1, 180px);
     grid-template-rows: repeat(4, 180px);
   }
-  .otherImages > img {
+  .otherImages img {
     width: 180px;
     height: 180px;
   }
