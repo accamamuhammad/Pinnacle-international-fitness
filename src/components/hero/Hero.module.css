@@ -80,8 +80,9 @@ main {
   cursor: pointer;
   padding-top: 4px;
   margin-top: 40px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   border-radius: 5px;
+  padding-bottom: 3.5px;
   transition: 0.5s ease-in;
   backdrop-filter: blur(8px);
   border: 0.5px solid white;
