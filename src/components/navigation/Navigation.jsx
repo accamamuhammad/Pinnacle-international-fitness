@@ -1,6 +1,8 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import navCSS from "./Navigation.module.css";
+import xMark from "../../../public/icons/xmark-solid.svg";
+import bars from "../../../public/icons/bars-solid.svg";
 import pinnacleLogo from "../../../public/icons/pinnacle-fitness-logo.png";
 
 const Navigation = () => {
@@ -32,11 +34,7 @@ const Navigation = () => {
         </li>
       </ul>
       <img
-        src={`${
-          toggleNav
-            ? "../../../public/icons/xmark-solid.svg"
-            : "../../../public/icons/bars-solid.svg"
-        }`}
+        src={`${toggleNav ? xMark : bars}`}
         alt="menu-icon"
         className={navCSS.menuIcon}
         onClick={handleToggleNav}
