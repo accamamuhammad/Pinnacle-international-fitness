@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Image } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import navCSS from "./Navigation.module.css";
 import xMark from "../../../public/icons/xmark-solid.svg";
@@ -15,7 +15,12 @@ const Navigation = () => {
   return (
     <nav className={`${toggleNav ? navCSS.navFixed : navCSS.navNormal}`}>
       <AnchorLink href="#Home">
-        <img src={pinnacleLogo} className={navCSS.logo} />
+        <img
+          src={pinnacleLogo}
+          width={80}
+          height={80}
+          className={navCSS.logo}
+        />
       </AnchorLink>
       <ul className={`${toggleNav ? navCSS.navOn : navCSS.navOff}`}>
         <li>
