@@ -37,7 +37,6 @@ nav ul li a:hover {
   color: var(--main-green);
 }
 nav .logo {
-  width: 45px;
   z-index: 99;
 }
 /* Navigation for medium screens */

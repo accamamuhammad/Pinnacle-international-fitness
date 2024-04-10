@@ -1,4 +1,4 @@
-import { useState, Image } from "react";
+import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import navCSS from "./Navigation.module.css";
 import xMark from "../../../public/icons/xmark-solid.svg";
@@ -17,8 +17,8 @@ const Navigation = () => {
       <AnchorLink href="#Home">
         <img
           src={pinnacleLogo}
-          width={80}
-          height={80}
+          width={40}
+          height={75}
           className={navCSS.logo}
         />
       </AnchorLink>

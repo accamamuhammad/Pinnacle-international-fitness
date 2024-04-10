@@ -34,7 +34,7 @@
     gap: 25px;
   }
   .programBox {
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 290px);
     grid-template-columns: repeat(2, 290px);
   }
 }
@@ -43,7 +43,7 @@
     gap: 14px;
   }
   .programBox {
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(3, 240px);
     grid-template-columns: repeat(2, 240px);
   }
 }
@@ -54,8 +54,8 @@
   }
   .programBox {
     margin: 25px 0;
-    grid-template-rows: repeat(6, 330px);
-    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(6, 280px);
+    grid-template-columns: repeat(1, 280px);
   }
   .ProgramsWrapper > p {
     font-size: 1.2rem;

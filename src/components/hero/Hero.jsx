@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    setTimeout(handlePreloader, 100);
+    setTimeout(handlePreloader, 2666);
   }, []);
 
   return (
@@ -25,9 +25,12 @@ const Hero = () => {
         <h1>
           Elevate your fitness journey With <span>pinnacle fitness</span>
         </h1>
+        <button>Get Fit Now!</button>
+        {/*
         <a href="https://wa.me/+2347060555119" target="blank">
-          <button>Get Fit Now</button>
+          <button>Get Fit Now!</button>
         </a>
+        */}
       </div>
     </main>
   );

@@ -58,45 +58,45 @@
 @media (max-width: 530px) {
   .programsBoxes > div {
     padding: 15px;
-    height: 330px;
-    min-width: 320px;
+    height: 280px;
+    min-width: 280px;
   }
   .programBox {
     grid-template-rows: repeat(6, 330px);
     grid-template-columns: repeat(1, 320px);
   }
   .programsBoxes > div > h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .programsBoxes > div > p {
-    font-size: 1.1rem;
-    line-height: 1.45rem;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
   }
   .programsBoxes > div > a {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   .programsBoxes img {
-    width: 60px;
+    width: 40px;
   }
 }
 @media (max-width: 360px) {
   .programsBoxes > div {
     padding: 18px;
-    height: 290px;
+    height: 280px;
     min-width: 280px;
   }
   .programsBoxes > div > h2 {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
   }
   .programsBoxes > div > p {
-    font-size: 0.85rem;
-    line-height: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.35rem;
   }
   .programsBoxes > div > a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .programsBoxes img {
-    width: 50px;
+    width: 38px;
   }
 }
 @media (max-width: 300px) {
@@ -106,16 +106,16 @@
     min-width: 230px;
   }
   .programsBoxes > div > h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .programsBoxes > div > p {
     font-size: 0.7rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
   }
   .programsBoxes > div > a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   .programsBoxes img {
-    width: 35px;
+    width: 30px;
   }
 }

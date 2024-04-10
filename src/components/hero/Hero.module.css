@@ -1,7 +1,7 @@
 .preloader {
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   position: fixed;
   align-items: center;
@@ -40,6 +40,17 @@
     width: 0;
   }
 }
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 main {
   background-size: cover;
   background-position: center;
@@ -72,33 +83,74 @@ main {
   color: var(--main-green);
 }
 .heroBox button {
-  width: 220px;
-  height: 50px;
+  width: 215px;
+  height: 55px;
   border: none;
-  z-index: 99;
+  z-index: 0;
+  font-size: 1.15rem;
+  outline: none;
   color: white;
-  cursor: pointer;
-  padding-top: 4px;
+  font-weight: 700;
   margin-top: 40px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  padding-bottom: 3.5px;
-  transition: 0.5s ease-in;
-  backdrop-filter: blur(8px);
-  border: 0.5px solid white;
-  font-family: "Teko-regular";
+  letter-spacing: 0.9px;
   background-color: transparent;
-  -webkit-backdrop-filter: blur(8px);
-  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: -3px 5px 16px rgb(58, 56, 56);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.heroBox button:hover {
-  transform: scale(108%);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+.heroBox button::before {
+  content: "";
   background: linear-gradient(
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.1)
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
   );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.heroBox button:active {
+  color: #000;
+}
+
+.heroBox button:active:after {
+  background: transparent;
+}
+
+.heroBox button:hover::before {
+  opacity: 1;
+}
+
+.heroBox button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 @media (max-width: 1000px) {
   .heroBox h1,
@@ -128,7 +180,7 @@ main {
   }
   .heroBox button {
     width: 200px;
-    height: 48px;
+    height: 50px;
   }
   .preloaderText {
     width: 338px;
@@ -147,8 +199,8 @@ main {
     font-size: 2.2rem;
   }
   .heroBox button {
-    width: 180px;
-    height: 46px;
+    width: 185px;
+    height: 48px;
   }
   .preloaderText {
     width: 275px;

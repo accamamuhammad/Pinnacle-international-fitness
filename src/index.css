@@ -4,6 +4,17 @@
   font-size: 18px;
   box-sizing: border-box;
 }
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 :root {
   --about-bg: #31312f;
   --white-text: #ffffff;
