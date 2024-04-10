@@ -12,6 +12,8 @@ const Attribution = () => {
           <img
             src={youtubeIcon}
             alt="youtube"
+            width={30}
+            height={35}
             className={attributionCSS.YoutubeIcon}
           />
         </a>
@@ -19,18 +21,20 @@ const Attribution = () => {
           href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FPinnacle-International-Fitness-1590696251238206%2F%3Fref%3Dbookmarks"
           target="blank"
         >
-          <img src={facebookLogo} alt="facebook" />
+          <img src={facebookLogo} alt="facebook" height={35} width={25} />
         </a>
         <a
           href="https://www.instagram.com/pinnacle_international_fitness/"
           target="blank"
         >
-          <img src={instaLogo} alt="instagram" />
+          <img src={instaLogo} alt="instagram" width={25} height={35} />
         </a>
         <a href="mailto:pinnacleinternationalfitness@gmail.com">
           <img
             src={emailIcon}
             alt="Email"
+            width={30}
+            height={35}
             className={attributionCSS.emailIcon}
           />
         </a>

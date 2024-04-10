@@ -26,10 +26,6 @@
   align-items: center;
   margin: 10px 0;
 }
-.FooterLinks img {
-  width: 30px;
-  height: fit-content;
-}
 @media (max-width: 330px) {
   .AttributionWrapper a {
     font-size: 0.8rem;
