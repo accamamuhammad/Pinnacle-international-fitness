@@ -1,5 +1,6 @@
 import testimonyCSS from "./Testimony.module.css";
 import Testimonies from "./testimonies/Testimonies";
+import arrowIcon from "../../../public/icons/iconmonstr-arrow-right-thin.png";
 
 const Testimony = () => {
   return (
@@ -7,6 +8,7 @@ const Testimony = () => {
       <p>Client feedback</p>
       <div className={testimonyCSS.header}>
         <h1>What Our Client Think About Our Gym</h1>
+        <img src={arrowIcon} alt="arrow-icon" width={22} height={22} />
       </div>
       <div className={testimonyCSS.cardBox}>
         <Testimonies
