@@ -1,7 +1,7 @@
 .AttributionWrapper {
   row-gap: 5px;
   display: flex;
-  padding: 0px 0 10px 0;
+  padding: 0px 0 20px 0;
   height: fit-content;
   align-items: center;
   flex-direction: column;
@@ -19,6 +19,16 @@
   color: rgb(148, 142, 142);
   font-size: 0.65rem;
   font-family: "roboto-regular";
+}
+.FooterLinks {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin: 10px 0;
+}
+.FooterLinks img {
+  width: 30px;
+  height: fit-content;
 }
 @media (max-width: 330px) {
   .AttributionWrapper a {

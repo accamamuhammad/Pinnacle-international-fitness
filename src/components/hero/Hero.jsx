@@ -25,12 +25,12 @@ const Hero = () => {
         <h1>
           Elevate your fitness journey With <span>pinnacle fitness</span>
         </h1>
-        <button>Get Fit Now!</button>
-        {/*
-        <a href="https://wa.me/+2347060555119" target="blank">
+        <a
+          href="https://www.instagram.com/pinnacle_international_fitness/"
+          target="blank"
+        >
           <button>Get Fit Now!</button>
         </a>
-        */}
       </div>
     </main>
   );

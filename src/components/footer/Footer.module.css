@@ -1,7 +1,7 @@
 .FooterWrapper {
   display: flex;
   row-gap: none;
-  padding: 15px 25px 10px 25px;
+  padding: 25px 25px 10px 25px;
   height: fit-content;
   align-items: flex-start;
   justify-content: space-between;
@@ -51,18 +51,6 @@
   margin-top: 12px;
   align-items: center;
   flex-direction: row;
-}
-.FooterWrapper > div:nth-child(2) img {
-  width: 25px;
-  cursor: pointer;
-  height: fit-content;
-}
-.FooterWrapper > div:nth-child(2) .emailIcon {
-  width: 35px;
-  height: 35px;
-}
-.FooterWrapper > div:nth-child(2) .YoutubeIcon {
-  width: 35px;
 }
 @media (max-width: 530px) {
   .FooterWrapper {
