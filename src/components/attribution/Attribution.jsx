@@ -13,7 +13,7 @@ const Attribution = () => {
             src={youtubeIcon}
             alt="youtube"
             width={30}
-            height={35}
+            height={34}
             className={attributionCSS.YoutubeIcon}
           />
         </a>
